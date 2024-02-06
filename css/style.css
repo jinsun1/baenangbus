@@ -167,27 +167,31 @@ body {
 
 .main_text {
     position: absolute;
-    left: 3%;
-    top: 35%;
+    left: 10%;
+    top: 40%;
     z-index: 10;
     color: #fff;
 }
 
 .main_text h1 {
-    font-size: 48px;
+    font-size: 60px;
     line-height: 140%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     letter-spacing: 2px;
     font-weight: 700;
     opacity: 1;
 }
 
 .main_text h3 {
-    font-size: 20px;
-    line-height: 160%;
+    font-size: 25px;
+    line-height: 170%;
     font-weight: 400;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     letter-spacing: 1px;
+}
+
+.main_text h3 span {
+    font-weight: 600;
 }
 
 .icon_box {
@@ -379,6 +383,7 @@ body {
     text-align: left;
     padding: 3%;
     box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sec3_inner ol {
@@ -510,7 +515,7 @@ body {
 .img_wrapper {
     display: flex;
     width: 4200px;
-   animation: driver_slide 25s linear infinite;
+    animation: driver_slide 25s linear infinite;
 }
 
 .img_box {
@@ -609,25 +614,36 @@ body {
     background-color: #00AAEA;
     color: #fff;
 }
+
 .w-btn {
     position: relative;
     border: none;
     display: inline-block;
     padding: 20px 35px;
     border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     font-weight: 600;
     transition: 0.25s;
     font-size: 18px;
 }
+
+.btn_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 button {
-   /* margin: 20px;*/
+    /* margin: 20px;*/
+}
+
+.btn_area p {
+    padding-right: 10px;
 }
 
 .w-btn:hover {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -702,8 +718,6 @@ button {
 
 
 
-
-
 /*태블릿 미디어쿼리*/
 @media (min-width:750px) and (max-width:1319px) {}
 
@@ -744,7 +758,7 @@ button {
 
     .sec3_inner ol li {
         padding: 5% 4%;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     .sec3_inner .title {
@@ -777,8 +791,8 @@ button {
 
     /*recruit*/
     .recruit_inner h1 {
-        font-size: 43px;
-        line-height: 55px;
+        font-size: 45px;
+        line-height: 60px;
     }
 
 
@@ -848,7 +862,7 @@ button {
 
     .sec3_inner ol li {
         padding: 4% 3%;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     /*accordian*/
@@ -867,13 +881,20 @@ button {
 
     #driver_slide .title p {
         font-size: 25px;
-        line-height: 30px;
+        line-height: 35px;
     }
 
     /*recruit*/
+    #recruit {
+        background: url(../images/pc/main/recruit_1250.jpg) no-repeat;
+        width: 100%;
+        height: 680px;
+        background-position: center center;
+    }
+
     .recruit_inner h1 {
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 42px;
+        line-height: 60px;
     }
 
     /*footer*/
@@ -891,6 +912,24 @@ button {
 /*sec2 중간 태블릿 미디어쿼리 끝부분*/
 
 @media (min-width:750px) and (max-width:999px) {
+    .main_text {
+        left: 8%;
+        top: 40%;
+    }
+
+    .main_text h1 {
+        font-size: 55px;
+        line-height: 120%;
+        padding-bottom: 20px;
+    }
+
+    .main_text h3 {
+        font-size: 24px;
+        line-height: 160%;
+        padding-bottom: 45px;
+    }
+
+    /*sec2*/
     .sec2_inner {
         justify-content: center;
     }
@@ -939,7 +978,7 @@ button {
         text-align: left;
         padding: 10% 6%;
         margin-bottom: 25px;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     .sec3_inner ol img {
@@ -972,54 +1011,64 @@ button {
     }
 
     #driver_slide {
-        padding: 180px 0;
+        padding: 160px 0;
     }
+
     #driver_slide .img_slide>li {
         width: 270px;
         height: 410px;
     }
-    
+
     .img_slide {
         width: 1750px;
     }
-    
+
     .img_wrapper {
         width: 3500px;
     }
 
-    #driver_slide .img_slide>li img{
+    #driver_slide .img_slide>li img {
         width: 100%;
     }
 
     .profile_text h5 {
         font-size: 18px;
     }
+
     .por_flex h1 {
         padding-right: 5px;
     }
+
     .profile_text h4 {
         font-size: 15px;
         line-height: 23px;
         padding: 6px;
-        }
+    }
 
-        .img_wrapper ol li {
-            font-size: 13px;
-            padding: 6px 13px;
-            border-radius: 30px;
-            margin-right: 6px;
-            margin-bottom: 6px;
-            }
-    
-            .profile_text {
-                padding: 10px 20px}
+    .img_wrapper ol li {
+        font-size: 13px;
+        padding: 6px 13px;
+        border-radius: 30px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+    }
 
-                /*recruit*/
-                #recruit {
-                    height: 600px;}
+    .profile_text {
+        padding: 10px 20px
+    }
 
-                    .recruit_inner {
-                        padding: 150px 0;}
+    /*recruit*/
+    #recruit {
+        background: url(../images/pc/main/recruit_1000.jpg) no-repeat;
+        width: 100%;
+        height: 600px;
+        background-position: center center;
+    }
+
+    .recruit_inner {
+        padding: 150px 0;
+    }
+
     /*footer*/
     .right_area {
         text-align: left;
@@ -1036,12 +1085,24 @@ button {
 @media(min-width:550px) and (max-width:749px) {
 
     /*main banner*/
+    .main_text h1 br {
+        display: block;
+    }
+
     .main_text h1 {
-        font-size: 43px;
+        font-size: 50px;
     }
 
     .main_text h3 {
-        font-size: 22px;
+        font-size: 24px;
+    }
+
+    .main_text {
+        top: 30%;
+    }
+
+    .icon_box a {
+        margin-bottom: 15px;
     }
 
     /*sec2*/
@@ -1096,7 +1157,7 @@ button {
         text-align: left;
         padding: 10% 6%;
         margin-bottom: 25px;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     .sec3_inner ol {
@@ -1169,56 +1230,67 @@ button {
     #driver_slide {
         padding: 180px 0;
     }
+
     #driver_slide .img_slide>li {
         width: 270px;
         height: 410px;
     }
-    
+
     .img_slide {
         width: 1750px;
     }
-    
+
     .img_wrapper {
         width: 3500px;
     }
 
-    #driver_slide .img_slide>li img{
+    #driver_slide .img_slide>li img {
         width: 100%;
     }
 
     .profile_text h5 {
         font-size: 18px;
     }
+
     .por_flex h1 {
         padding-right: 5px;
     }
+
     .profile_text h4 {
         font-size: 15px;
         line-height: 23px;
         padding: 6px;
-        }
+    }
 
-        .img_wrapper ol li {
-            font-size: 13px;
-            padding: 6px 13px;
-            border-radius: 30px;
-            margin-right: 6px;
-            margin-bottom: 6px;
-            }
-    
-            .profile_text {
-                padding: 10px 20px}
+    .img_wrapper ol li {
+        font-size: 13px;
+        padding: 6px 13px;
+        border-radius: 30px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+    }
+
+    .profile_text {
+        padding: 10px 20px
+    }
 
     /*recruit_inner*/
+    #recruit {
+        background: url(../images/pc/main/recruit_1000.jpg) no-repeat;
+        width: 100%;
+        height: 580px;
+        background-position: bottom center;
+    }
+
     .recruit_inner h1 {
         font-size: 42px;
         line-height: 58px;
     }
-    #recruit {
-        height: 580px;}
 
-        .recruit_inner {
-            padding: 140px 0;}
+
+    .recruit_inner {
+        padding: 145px 0;
+    }
 
 
     /*footer*/
@@ -1262,7 +1334,8 @@ button {
     }
 
     .main_text {
-        top: 25%;
+        top: 30%;
+        left: 7%;
     }
 
     .icon_box a {
@@ -1299,10 +1372,12 @@ button {
     #sec2 .title {
         font-size: 33px;
     }
+
     #sec2 .title {
 
         line-height: 45px;
     }
+
     .sec2_inner .title {
         padding-bottom: 50px;
         width: 100%;
@@ -1349,7 +1424,7 @@ button {
         text-align: left;
         padding: 12% 8%;
         margin-bottom: 15px;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     .sec3_inner ol {
@@ -1366,8 +1441,10 @@ button {
     .sec3_inner .title {
         padding-bottom: 50px;
     }
+
     .sec3_inner .title {
-        line-height: 45px;}
+        line-height: 45px;
+    }
 
     .sec3_inner ol li p {
         font-size: 20px;
@@ -1428,16 +1505,16 @@ button {
         width: 230px;
         height: 350px;
     }
-    
+
     .img_slide {
         width: 1500px;
     }
-    
+
     .img_wrapper {
         width: 3000px;
     }
 
-    #driver_slide .img_slide>li img{
+    #driver_slide .img_slide>li img {
         width: 100%;
         height: 51%;
     }
@@ -1445,40 +1522,51 @@ button {
     .profile_text h5 {
         font-size: 16px;
     }
+
     .por_flex h1 {
         padding-right: 5px;
     }
+
     .profile_text h4 {
         font-size: 14px;
         line-height: 19px;
         padding: 6px;
-        }
-
-        .img_wrapper ol li {
-            font-size: 12px;
-            padding: 5px 10px;
-            border-radius: 30px;
-            margin-right: 6px;
-            margin-bottom: 5px;}
-    
-            .profile_text {
-                padding: 9px 14px}
-
-                .por_flex h1 {
-                    width: 20%;
-                }
-/*recruit*/
-    #recruit {
-        height: 500px;
     }
+
+    .img_wrapper ol li {
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 30px;
+        margin-right: 6px;
+        margin-bottom: 5px;
+    }
+
+    .profile_text {
+        padding: 9px 14px
+    }
+
+    .por_flex h1 {
+        width: 20%;
+    }
+
+    /*recruit*/
+    #recruit {
+        background: url(../images/pc/main/recruit_1000.jpg) no-repeat;
+        width: 100%;
+        height: 500px;
+        background-position: center center;
+    }
+
     .recruit_inner {
-        padding: 120px 0}
+        padding: 120px 0
+    }
 
     .recruit_inner h1 {
         font-size: 33px;
         line-height: 55px;
         padding-bottom: 35px;
     }
+
     /*footer*/
     #footer {
         padding-top: 50px;
@@ -1505,25 +1593,31 @@ button {
 /*549px이하 미디어쿼리 끝부분*/
 
 @media(max-width:400px) {
+    .main_text {
+        top: 30%;
+        left: 5%;
+    }
 
     .main_text h1 {
-        font-size: 35px;
+        font-size: 37px;
         letter-spacing: 0px;
     }
 
     .main_text h3 {
         font-size: 19px;
         letter-spacing: 0px;
-        line-height: 170%;
+        line-height: 190%;
     }
 
     .main_text h3 {
         padding-bottom: 20px;
     }
+
     .icon_box a {
         width: 165px;
         font-size: 18px;
     }
+
     #down_bar a {
         line-height: 70px;
     }
@@ -1550,7 +1644,9 @@ button {
     }
 
     #sec2 .title {
-        line-height: 40px;}
+        line-height: 40px;
+    }
+
     #sec2 .title {
         font-size: 28px;
         letter-spacing: 0;
@@ -1623,8 +1719,10 @@ button {
     }
 
 
-    #driver_slide .title p {line-height: 30px;
+    #driver_slide .title p {
+        line-height: 30px;
     }
+
     /*accordion*/
     #accordion h1 {
         font-size: 28px;
@@ -1632,7 +1730,7 @@ button {
 
     .text_info {
         font-size: 17px;
-        line-height: 24px;
+        line-height: 26px;
     }
 
     /*driver slide*/
@@ -1647,11 +1745,17 @@ button {
     .title_in {
         font-size: 17px;
     }
+
     #driver_slide {
-        padding: 100px 0;}
+        padding: 100px 0;
+    }
+
     /*recruit*/
     #recruit {
-        height: 400px;
+        background: url(../images/pc/main/recruit_500.jpg) no-repeat;
+        width: 100%;
+        height: 430px;
+        background-position: center center;
     }
 
     .recruit_inner h1 {
@@ -1663,20 +1767,21 @@ button {
 
     .recruit_inner h1 {
         font-size: 27px;
-        line-height: 42px;
+        line-height: 45px;
         padding-bottom: 25px;
         letter-spacing: 0px;
     }
 
     .recruit_inner {
-        padding: 100px 0;
+        padding: 110px 0;
     }
 
     .w-btn {
-        font-size: 17px;
-        padding: 16px 28px;}
+        font-size: 16px;
+        padding: 16px 28px;
+    }
 
-        
+
     /*footer*/
     #footer {
         padding-top: 50px;
