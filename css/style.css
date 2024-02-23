@@ -1317,7 +1317,7 @@ button {
     .main_text h1 {
         font-size: 43px;
         letter-spacing: 0px;
-        line-height: 140%;
+        line-height: 120%;
     }
 
     .main_text h3 {
@@ -1599,11 +1599,11 @@ button {
     .main_text h3 {
         font-size: 19px;
         letter-spacing: 0px;
-        line-height: 190%;
+        line-height: 160%;
     }
 
     .main_text h3 {
-        padding-bottom: 20px;
+        padding-bottom: 35px;
     }
 
     .icon_box a {
